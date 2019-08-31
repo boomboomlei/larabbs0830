@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "175a95f2fbb1cbc06f0c0d64cdb351b8",
+    "content-hash": "64b59c3c8aa75ced98f381fa65f93825",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -1035,79 +1035,6 @@
                 "storage"
             ],
             "time": "2019-08-24T11:17:19+00:00"
-        },
-        {
-            "name": "mews/captcha",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mewebstudio/captcha.git",
-                "reference": "2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mewebstudio/captcha/zipball/2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a",
-                "reference": "2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "ext-gd": "*",
-                "illuminate/config": "~5.0",
-                "illuminate/filesystem": "~5.0",
-                "illuminate/hashing": "~5.0",
-                "illuminate/support": "~5.0",
-                "intervention/image": "~2.2",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "~4.1"
-            },
-            "type": "package",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Mews\\Captcha\\CaptchaServiceProvider"
-                    ],
-                    "aliases": {
-                        "Captcha": "Mews\\Captcha\\Facades\\Captcha"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Mews\\Captcha\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Muharrem ERİN",
-                    "role": "Developer",
-                    "email": "me@mewebstudio.com",
-                    "homepage": "https://github.com/mewebstudio"
-                }
-            ],
-            "description": "Laravel 5 Captcha Package",
-            "homepage": "https://github.com/mewebstudio/captcha",
-            "keywords": [
-                "captcha",
-                "laravel5 Captcha",
-                "laravel5 Security"
-            ],
-            "time": "2019-08-16T21:57:24+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3907,6 +3834,79 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "mews/captcha",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mewebstudio/captcha.git",
+                "reference": "2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mewebstudio/captcha/zipball/2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a",
+                "reference": "2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-gd": "*",
+                "illuminate/config": "~5.0",
+                "illuminate/filesystem": "~5.0",
+                "illuminate/hashing": "~5.0",
+                "illuminate/support": "~5.0",
+                "intervention/image": "~2.2",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Mews\\Captcha\\CaptchaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Captcha": "Mews\\Captcha\\Facades\\Captcha"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mews\\Captcha\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muharrem ERİN",
+                    "role": "Developer",
+                    "email": "me@mewebstudio.com",
+                    "homepage": "https://github.com/mewebstudio"
+                }
+            ],
+            "description": "Laravel 5 Captcha Package",
+            "homepage": "https://github.com/mewebstudio/captcha",
+            "keywords": [
+                "captcha",
+                "laravel5 Captcha",
+                "laravel5 Security"
+            ],
+            "time": "2019-08-16T21:57:24+00:00"
         },
         {
             "name": "mockery/mockery",
