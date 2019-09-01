@@ -6,7 +6,8 @@ use App\Models\Topic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
-use Category;
+use App\Models\Category;
+use  Auth;
 
 class TopicsController extends Controller
 {
@@ -46,7 +47,7 @@ class TopicsController extends Controller
 		// $topic = Topic::create($request->all());
 
 		$topic->fill($request->all());
-		$topic->usr_id=Auth::id();
+		$topic->user_id=Auth::id();
 		$topic->save();
 
 		return redirect()->route('topics.show', $topic->id)->with('success', '创建成功.');
