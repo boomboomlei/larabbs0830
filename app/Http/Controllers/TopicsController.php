@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
 use App\Models\Category;
 use  Auth;
+use App\Handlers\SlugTranslateHandler;
 
 use App\Handlers\ImageUploadHandler;
 
@@ -33,10 +34,10 @@ class TopicsController extends Controller
 		return view('topics.index',compact('topics'));
 	}
 
-    public function show(Topic $topic)
+    public function show(Topic $topic,Request  $request)
     {
     	if(!empty($topic->slug)&& $topic->slug!=$request->slug){
-    		return redirect($topic->link(),301)
+    		return redirect($topic->link(),301);
     	}
         return view('topics.show', compact('topic'));
     }
@@ -69,6 +70,12 @@ class TopicsController extends Controller
 	public function update(TopicRequest $request, Topic $topic)
 	{
 		$this->authorize('update', $topic);
+
+		// dd($request->title.','.$topic->title);
+		// if($request->title!=$topic->title){
+		// 	$request->slug=app(SlugTranslateHandler::class)->translate($request->title);
+		// }
+
 		$topic->update($request->all());
 
 		// return redirect()->route('topics.show', $topic->id)->with('success', '修改成功.');
