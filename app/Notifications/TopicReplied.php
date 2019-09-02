@@ -33,7 +33,7 @@ class TopicReplied extends Notification
     public function toDatabase($notifiable){
         $topic=$this->reply->topic;
 
-        $link=$topic->link('#reply'.$this->reply->id);
+        $link=$topic->link(['#reply'.$this->reply->id]);
 
         return [
             'reply_id' => $this->reply->id,
@@ -44,7 +44,7 @@ class TopicReplied extends Notification
             'topic_link' => $link,
             'topic_id' => $topic->id,
             'topic_title' => $topic->title,
-            
+
         ];
     }
 
