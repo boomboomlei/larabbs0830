@@ -62,6 +62,14 @@
           @endcan
         </div>
       </div>
+      <div class="card topic-reply mt-4">
+          <div class="card-body">
+              @include('topics._reply_box',['topic'=>$topic])
+              @include('topics._reply_list',['replies'=>$topic->replies()->with('user')->get()])
+          </div>
+      </div>
+
+
     </div>
   </div>
 @stop
