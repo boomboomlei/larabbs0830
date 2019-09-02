@@ -51,6 +51,8 @@
             </a>
             
             <form action="{{route('topics.destroy',$topic->id)}}" method="post" style="display: inline-block;" onsubmit="return confirm('您确定要删除么？')">
+              {{ csrf_field() }}
+                {{ method_field('DELETE') }}
                <button type="submit" class="btn btn-outline-secondary btn-sm">
                   <i class="far fa-trash-alt"></i> 删除
                 </button>
