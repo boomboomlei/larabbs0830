@@ -85,4 +85,20 @@ class User extends Authenticatable implements MustVerifyEmailContract
         $this->save();
         $this->unreadNotifications->markAsRead();
     }
+
+
+    public  function setPasswordAttribute($value){
+        if(strlen($value)!=60){
+            $value=bcrypt($value);
+        }
+        $this->attributes['password']=$value;
+    }
+
+    public  function setAvatarAttribute($path){
+        if(!starts_with($path,'http')){
+            $path=config('app.url').'/uploads/images/avatars/'.$path;
+        }
+
+        $this->attributes['avatar']=$path;
+    }
 }
