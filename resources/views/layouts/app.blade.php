@@ -8,8 +8,9 @@
 	 <!-- CSRF Token -->
 	 <meta name="csrf-token" content="{{ csrf_token() }}">
 	
-	<title>@yield('title','LeiBBS')-磊的论坛</title>
-	<meta name="description" content="@yield('description','LeiBBS爱好者社区')" />
+	  <title>@yield('title', 'LeiBBS') - {{ setting('site_name', 'lei') }}</title>
+  <meta name="description" content="@yield('description', setting('seo_description', 'LaraBBS 爱好者社区。'))" />
+  <meta name="keyword" content="@yield('keyword', setting('seo_keyword', 'LaraBBS,社区,论坛,开发者论坛'))" />
 
 	<link rel="stylesheet" href="{{ mix('css/app.css') }}">
 	@yield('styles')
