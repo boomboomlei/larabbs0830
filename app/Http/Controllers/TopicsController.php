@@ -14,6 +14,8 @@ use App\Handlers\ImageUploadHandler;
 
 use App\Models\User;
 
+use App\Models\Link;
+
 class TopicsController extends Controller
 {
     public function __construct()
@@ -21,7 +23,7 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
-	public function index(Topic  $topic,Request $request,User $user)
+	public function index(Topic  $topic,Request $request,User $user,Link $link)
 	{
 		// $topics = Topic::paginate(30);
 		// return view('topics.index', compact('topics'));
@@ -36,11 +38,11 @@ class TopicsController extends Controller
 
 		$active_users=$user->getActiveUsers();
 
-		
+
+		$links=$link->getAllCached();
 
 
-
-		return view('topics.index',compact('topics','active_users'));
+		return view('topics.index',compact('topics','active_users','links'));
 	}
 
     public function show(Topic $topic,Request  $request)
