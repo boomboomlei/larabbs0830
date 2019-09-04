@@ -12,6 +12,8 @@ use App\Handlers\SlugTranslateHandler;
 
 use App\Handlers\ImageUploadHandler;
 
+use App\Models\User;
+
 class TopicsController extends Controller
 {
     public function __construct()
@@ -19,7 +21,7 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
-	public function index(Topic  $topic,Request $request)
+	public function index(Topic  $topic,Request $request,User $user)
 	{
 		// $topics = Topic::paginate(30);
 		// return view('topics.index', compact('topics'));
@@ -31,7 +33,14 @@ class TopicsController extends Controller
 		
 
 		$topics=$topic->withOrder($request->order)->paginate(20);
-		return view('topics.index',compact('topics'));
+
+		$active_users=$user->getActiveUsers();
+
+		
+
+
+
+		return view('topics.index',compact('topics','active_users'));
 	}
 
     public function show(Topic $topic,Request  $request)
