@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69a4f3dc2d1ce440197f9863026128de",
+    "content-hash": "64b59c3c8aa75ced98f381fa65f93825",
     "packages": [
         {
             "name": "caouecs/laravel-lang",
@@ -54,53 +54,6 @@
                 "lpm"
             ],
             "time": "2019-03-17T10:36:46+00:00"
-        },
-        {
-            "name": "ckeditor/ckeditor",
-            "version": "4.12.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ckeditor/ckeditor-releases.git",
-                "reference": "b1a25e93ae0b038f45dcba458f4c2c18bd7318e5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/b1a25e93ae0b038f45dcba458f4c2c18bd7318e5",
-                "reference": "b1a25e93ae0b038f45dcba458f4c2c18bd7318e5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+",
-                "LGPL-2.1+",
-                "MPL-1.1+"
-            ],
-            "authors": [
-                {
-                    "name": "CKSource",
-                    "homepage": "http://cksource.com"
-                }
-            ],
-            "description": "JavaScript WYSIWYG web text editor.",
-            "homepage": "http://ckeditor.com",
-            "keywords": [
-                "CKEditor",
-                "editor",
-                "fckeditor",
-                "html",
-                "javascript",
-                "richtext",
-                "text",
-                "wysiwyg"
-            ],
-            "time": "2019-06-28T10:41:23+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -520,23 +473,17 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
@@ -548,24 +495,24 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
             },
             "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -573,12 +520,33 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
                 },
                 {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
                     "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
                 }
             ],
@@ -593,7 +561,25 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "support": {
+                "issues": "https://github.com/guzzle/psr7/issues",
+                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-03-20T21:51:18+00:00"
         },
         {
             "name": "intervention/image",
@@ -1589,13 +1575,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
                 "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
@@ -1631,6 +1611,9 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
@@ -1832,13 +1815,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
                 "reference": "120b605dfeb996808c31b6477290a714d356e822",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
@@ -1864,6 +1841,10 @@
                 }
             ],
             "description": "A polyfill for getallheaders.",
+            "support": {
+                "issues": "https://github.com/ralouphie/getallheaders/issues",
+                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
+            },
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
@@ -1953,73 +1934,6 @@
                 "uuid"
             ],
             "time": "2018-07-19T23:38:55+00:00"
-        },
-        {
-            "name": "summerblue/administrator",
-            "version": "v1.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/summerblue/administrator.git",
-                "reference": "32967f6a66729790596b3bc5794d696893251d13"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/summerblue/administrator/zipball/32967f6a66729790596b3bc5794d696893251d13",
-                "reference": "32967f6a66729790596b3bc5794d696893251d13",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "ckeditor/ckeditor": "4.*",
-                "laravel/framework": "5.5.* || 5.6.* || 5.7.* || 5.8.*",
-                "php": ">=7.0.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~5.7.12"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Frozennode\\Administrator\\AdministratorServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/controllers"
-                ],
-                "psr-0": {
-                    "Frozennode\\Administrator": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Original: Jan Hartigan, modified by CJ",
-                    "email": "cj@estgroupe.com"
-                }
-            ],
-            "description": "A database interface package for Laravel, modified!",
-            "homepage": "https://github.com/summerblue/administrator",
-            "keywords": [
-                "admin",
-                "administrator",
-                "cms",
-                "database",
-                "laravel",
-                "laravel-administrator"
-            ],
-            "time": "2019-06-17T07:45:12+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3644,80 +3558,6 @@
     ],
     "packages-dev": [
         {
-            "name": "barryvdh/laravel-debugbar",
-            "version": "v3.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "8794e7a3b7f3a0e7222bcd088f5f44b2b6ff8e61"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/8794e7a3b7f3a0e7222bcd088f5f44b2b6ff8e61",
-                "reference": "8794e7a3b7f3a0e7222bcd088f5f44b2b6ff8e61",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "illuminate/routing": "^5.5|^6",
-                "illuminate/session": "^5.5|^6",
-                "illuminate/support": "^5.5|^6",
-                "maximebf/debugbar": "~1.15.0",
-                "php": ">=7.0",
-                "symfony/debug": "^3|^4",
-                "symfony/finder": "^3|^4"
-            },
-            "require-dev": {
-                "laravel/framework": "5.5.x"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Barryvdh\\Debugbar\\ServiceProvider"
-                    ],
-                    "aliases": {
-                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\Debugbar\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "PHP Debugbar integration for Laravel",
-            "keywords": [
-                "debug",
-                "debugbar",
-                "laravel",
-                "profiler",
-                "webprofiler"
-            ],
-            "time": "2019-08-22T14:29:54+00:00"
-        },
-        {
             "name": "beyondcode/laravel-dump-server",
             "version": "1.3.0",
             "source": {
@@ -3785,69 +3625,6 @@
             "time": "2019-08-11T13:17:40+00:00"
         },
         {
-            "name": "cakephp/chronos",
-            "version": "1.2.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cakephp/chronos.git",
-                "reference": "0292f06e8cc23fc82f0574889da2d8bf27b613c1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/chronos/zipball/0292f06e8cc23fc82f0574889da2d8bf27b613c1",
-                "reference": "0292f06e8cc23fc82f0574889da2d8bf27b613c1",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": "^5.5.9|^7"
-            },
-            "require-dev": {
-                "athletic/athletic": "~0.1",
-                "cakephp/cakephp-codesniffer": "^3.0",
-                "phpbench/phpbench": "@dev",
-                "phpstan/phpstan": "^0.6.4",
-                "phpunit/phpunit": "<6.0 || ^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cake\\Chronos\\": "src/"
-                },
-                "files": [
-                    "src/carbon_compat.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Nesbitt",
-                    "email": "brian@nesbot.com",
-                    "homepage": "http://nesbot.com"
-                },
-                {
-                    "name": "The CakePHP Team",
-                    "homepage": "http://cakephp.org"
-                }
-            ],
-            "description": "A simple API extension for DateTime.",
-            "homepage": "http://cakephp.org",
-            "keywords": [
-                "date",
-                "datetime",
-                "time"
-            ],
-            "time": "2019-06-17T15:19:18+00:00"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.2.0",
             "source": {
@@ -3908,59 +3685,6 @@
                 "instantiate"
             ],
             "time": "2019-03-17T17:37:11+00:00"
-        },
-        {
-            "name": "ezyang/htmlpurifier",
-            "version": "v4.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "d85d39da4576a6934b72480be6978fb10c860021"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d85d39da4576a6934b72480be6978fb10c860021",
-                "reference": "d85d39da4576a6934b72480be6978fb10c860021",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "require-dev": {
-                "simpletest/simpletest": "^1.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
-                "files": [
-                    "library/HTMLPurifier.composer.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Edward Z. Yang",
-                    "email": "admin@htmlpurifier.org",
-                    "homepage": "http://ezyang.com"
-                }
-            ],
-            "description": "Standards compliant HTML filter written in PHP",
-            "homepage": "http://htmlpurifier.org/",
-            "keywords": [
-                "html"
-            ],
-            "time": "2018-02-23T01:58:20+00:00"
         },
         {
             "name": "filp/whoops",
@@ -4086,134 +3810,6 @@
             "time": "2018-07-12T10:23:15+00:00"
         },
         {
-            "name": "guzzlehttp/guzzle",
-            "version": "6.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
-                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.4",
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
-                "psr/log": "^1.0"
-            },
-            "suggest": {
-                "psr/log": "Required for using the Log middleware"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.3-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle is a PHP HTTP client library",
-            "homepage": "http://guzzlephp.org/",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "rest",
-                "web service"
-            ],
-            "time": "2018-04-22T15:46:56+00:00"
-        },
-        {
-            "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle promises library",
-            "keywords": [
-                "promise"
-            ],
-            "time": "2016-12-20T10:07:11+00:00"
-        },
-        {
             "name": "hamcrest/hamcrest-php",
             "version": "v2.0.0",
             "source": {
@@ -4266,371 +3862,6 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
-        },
-        {
-            "name": "hieu-le/active",
-            "version": "3.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/letrunghieu/active.git",
-                "reference": "42d0f50be74b89d730bb4c0ee8c32447630506c6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/letrunghieu/active/zipball/42d0f50be74b89d730bb4c0ee8c32447630506c6",
-                "reference": "42d0f50be74b89d730bb4c0ee8c32447630506c6",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "laravel/framework": "^5.5",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
-                "orchestra/testbench": "^3.1",
-                "phpunit/phpunit": "~6.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "HieuLe\\Active\\ActiveServiceProvider"
-                    ],
-                    "aliases": {
-                        "Active": "HieuLe\\Active\\Facades\\Active"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "HieuLe\\Active\\": "src/",
-                    "HieuLe\\ActiveTest\\": "tests/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hieu Le",
-                    "email": "letrunghieu.cse09@gmail.com",
-                    "homepage": "https://www.hieule.info"
-                }
-            ],
-            "description": "The helper class for Laravel (4/5) applications to get active class base on current route",
-            "homepage": "https://www.hieule.info/tag/laravel-active/",
-            "keywords": [
-                "active",
-                "laravel",
-                "routing"
-            ],
-            "time": "2017-09-07T02:36:51+00:00"
-        },
-        {
-            "name": "laravel/horizon",
-            "version": "v3.3.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/horizon.git",
-                "reference": "692d3649a9c1bd13a3340ecc10036c1d3b55155b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/horizon/zipball/692d3649a9c1bd13a3340ecc10036c1d3b55155b",
-                "reference": "692d3649a9c1bd13a3340ecc10036c1d3b55155b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "cakephp/chronos": "^1.0",
-                "ext-json": "*",
-                "ext-pcntl": "*",
-                "ext-posix": "*",
-                "illuminate/contracts": "~5.7.0|~5.8.0|^6.0|^7.0",
-                "illuminate/queue": "~5.7.0|~5.8.0|^6.0|^7.0",
-                "illuminate/support": "~5.7.0|~5.8.0|^6.0|^7.0",
-                "php": ">=7.1.0",
-                "predis/predis": "^1.1",
-                "ramsey/uuid": "^3.5",
-                "symfony/debug": "^4.2",
-                "symfony/process": "^4.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^3.7|^4.0|^5.0",
-                "phpunit/phpunit": "^7.0|^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Horizon\\HorizonServiceProvider"
-                    ],
-                    "aliases": {
-                        "Horizon": "Laravel\\Horizon\\Horizon"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Horizon\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Dashboard and code-driven configuration for Laravel queues.",
-            "keywords": [
-                "laravel",
-                "queue"
-            ],
-            "time": "2019-08-27T14:30:05+00:00"
-        },
-        {
-            "name": "maximebf/debugbar",
-            "version": "v1.15.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
-                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/log": "^1.0",
-                "symfony/var-dumper": "^2.6|^3.0|^4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0|^5.0"
-            },
-            "suggest": {
-                "kriswallsmith/assetic": "The best way to manage assets",
-                "monolog/monolog": "Log using Monolog",
-                "predis/predis": "Redis storage"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.14-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DebugBar\\": "src/DebugBar/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Maxime Bouroumeau-Fuseau",
-                    "email": "maxime.bouroumeau@gmail.com",
-                    "homepage": "http://maximebf.com"
-                },
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "Debug bar in the browser for php application",
-            "homepage": "https://github.com/maximebf/php-debugbar",
-            "keywords": [
-                "debug",
-                "debugbar"
-            ],
-            "time": "2017-12-15T11:13:46+00:00"
-        },
-        {
-            "name": "mews/captcha",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mewebstudio/captcha.git",
-                "reference": "2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mewebstudio/captcha/zipball/2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a",
-                "reference": "2c9efa19d7d7ae56bed5f23e1c4c42ea5d01fc1a",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "ext-gd": "*",
-                "illuminate/config": "~5.0",
-                "illuminate/filesystem": "~5.0",
-                "illuminate/hashing": "~5.0",
-                "illuminate/support": "~5.0",
-                "intervention/image": "~2.2",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "~4.1"
-            },
-            "type": "package",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Mews\\Captcha\\CaptchaServiceProvider"
-                    ],
-                    "aliases": {
-                        "Captcha": "Mews\\Captcha\\Facades\\Captcha"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Mews\\Captcha\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Muharrem ERİN",
-                    "role": "Developer",
-                    "email": "me@mewebstudio.com",
-                    "homepage": "https://github.com/mewebstudio"
-                }
-            ],
-            "description": "Laravel 5 Captcha Package",
-            "homepage": "https://github.com/mewebstudio/captcha",
-            "keywords": [
-                "captcha",
-                "laravel5 Captcha",
-                "laravel5 Security"
-            ],
-            "time": "2019-08-16T21:57:24+00:00"
-        },
-        {
-            "name": "mews/purifier",
-            "version": "2.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mewebstudio/Purifier.git",
-                "reference": "ab70b25543a1afb3bcd0285d09e063fd268bf344"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mewebstudio/Purifier/zipball/ab70b25543a1afb3bcd0285d09e063fd268bf344",
-                "reference": "ab70b25543a1afb3bcd0285d09e063fd268bf344",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "ezyang/htmlpurifier": "4.10.*",
-                "illuminate/config": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
-                "illuminate/filesystem": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
-                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "graham-campbell/testbench": "^3.2",
-                "mockery/mockery": "0.9.*",
-                "phpunit/phpunit": "^4.8|^5.0",
-                "scrutinizer/ocular": "^1.3"
-            },
-            "suggest": {
-                "laravel/framework": "To test the Laravel bindings",
-                "laravel/lumen-framework": "To test the Lumen bindings"
-            },
-            "type": "package",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Mews\\Purifier\\PurifierServiceProvider"
-                    ],
-                    "aliases": {
-                        "Purifier": "Mews\\Purifier\\Facades\\Purifier"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Mews\\Purifier\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Muharrem ERİN",
-                    "role": "Developer",
-                    "email": "me@mewebstudio.com",
-                    "homepage": "https://github.com/mewebstudio"
-                }
-            ],
-            "description": "Laravel 5 HtmlPurifier Package",
-            "homepage": "https://github.com/mewebstudio/purifier",
-            "keywords": [
-                "Purifier",
-                "htmlpurifier",
-                "laravel5 HtmlPurifier",
-                "laravel5 Purifier",
-                "laravel5 Security",
-                "security",
-                "xss"
-            ],
-            "time": "2019-03-07T07:55:14+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -4826,57 +4057,6 @@
                 "symfony"
             ],
             "time": "2019-03-07T21:35:13+00:00"
-        },
-        {
-            "name": "overtrue/pinyin",
-            "version": "3.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/overtrue/pinyin.git",
-                "reference": "3b781d267197b74752daa32814d3a2cf5d140779"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/overtrue/pinyin/zipball/3b781d267197b74752daa32814d3a2cf5d140779",
-                "reference": "3b781d267197b74752daa32814d3a2cf5d140779",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Overtrue\\Pinyin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Carlos",
-                    "homepage": "http://github.com/overtrue"
-                }
-            ],
-            "description": "Chinese to pinyin translator.",
-            "homepage": "https://github.com/overtrue/pinyin",
-            "keywords": [
-                "Chinese",
-                "Pinyin",
-                "cn2pinyin"
-            ],
-            "time": "2017-07-10T07:20:01+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -5604,62 +4784,6 @@
             "time": "2019-08-21T07:05:16+00:00"
         },
         {
-            "name": "predis/predis",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nrk/predis.git",
-                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
-                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "suggest": {
-                "ext-curl": "Allows access to Webdis when paired with phpiredis",
-                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Predis\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniele Alessandri",
-                    "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net"
-                }
-            ],
-            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
-            "homepage": "http://github.com/nrk/predis",
-            "keywords": [
-                "nosql",
-                "predis",
-                "redis"
-            ],
-            "time": "2016-06-16T16:22:20+00:00"
-        },
-        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
             "source": {
@@ -6292,140 +5416,6 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
-            "name": "spatie/laravel-permission",
-            "version": "2.37.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "81dbe9d372d70c255b66a2727a235076509f8d45"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/81dbe9d372d70c255b66a2727a235076509f8d45",
-                "reference": "81dbe9d372d70c255b66a2727a235076509f8d45",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "illuminate/auth": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
-                "illuminate/container": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
-                "illuminate/contracts": "~5.3.0|~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
-                "illuminate/database": "~5.4.0|~5.5.0|~5.6.0|~5.7.0|~5.8.0",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "~3.4.2|~3.5.0|~3.6.0|~3.7.0",
-                "phpunit/phpunit": "^5.7|6.2|^7.0",
-                "predis/predis": "^1.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Spatie\\Permission\\PermissionServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Permission\\": "src"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "role": "Developer",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be"
-                }
-            ],
-            "description": "Permission handling for Laravel 5.4 and up",
-            "homepage": "https://github.com/spatie/laravel-permission",
-            "keywords": [
-                "acl",
-                "laravel",
-                "permission",
-                "security",
-                "spatie"
-            ],
-            "time": "2019-04-09T12:45:17+00:00"
-        },
-        {
-            "name": "summerblue/generator",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/summerblue/generator.git",
-                "reference": "f7248126fb11ed49a2dcaa373377d5649c52aac7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/summerblue/generator/zipball/f7248126fb11ed49a2dcaa373377d5649c52aac7",
-                "reference": "f7248126fb11ed49a2dcaa373377d5649c52aac7",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.0.0"
-            },
-            "require-dev": {
-                "laravel/laravel": "5.5.*",
-                "phpunit/phpunit": "~5.7"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Summerblue\\Generator\\GeneratorsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Summerblue\\Generator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fernando Brito",
-                    "email": "fernandobritofl@gmail.com"
-                },
-                {
-                    "name": "Summer",
-                    "email": "summer@yousails.com"
-                }
-            ],
-            "description": "Extend Laravel 5.5's generators scaffold.",
-            "keywords": [
-                "generators",
-                "laravel",
-                "laravel5",
-                "scaffold"
-            ],
-            "time": "2018-12-23T03:55:07+00:00"
-        },
-        {
             "name": "theseer/tokenizer",
             "version": "1.1.3",
             "source": {
@@ -6470,52 +5460,6 @@
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
             "time": "2019-06-13T22:48:21+00:00"
-        },
-        {
-            "name": "viacreative/sudo-su",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/viacreative/sudo-su.git",
-                "reference": "78905d0db3721a5daece6f7fcd6c6567fd00bb46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/viacreative/sudo-su/zipball/78905d0db3721a5daece6f7fcd6c6567fd00bb46",
-                "reference": "78905d0db3721a5daece6f7fcd6c6567fd00bb46",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "VIACreative\\SudoSu\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Terry Harvey",
-                    "email": "contact@terryharvey.co.uk"
-                }
-            ],
-            "description": "A utility package for logging in as other users",
-            "keywords": [
-                "debugging",
-                "laravel"
-            ],
-            "time": "2017-03-23T16:28:08+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -6582,5 +5526,6 @@
     "platform": {
         "php": "^7.1.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
